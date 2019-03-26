@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/thinkingmonkey00/portfolio-website.git",
+  "author": "melissa-murphy <melissamurphy.ca@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome.min.css": "^3.2.1"
+  },
+  "devDependencies": {
+    "sass": "^1.17.3"
+  }
+}
