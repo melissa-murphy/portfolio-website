@@ -5,10 +5,16 @@
   "repository": "https://github.com/thinkingmonkey00/portfolio-website.git",
   "author": "melissa-murphy <melissamurphy.ca@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
   "dependencies": {
-    "font-awesome.min.css": "^3.2.1"
+    "font-awesome.css": "^4.7.2",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
+    "@babel/parser": "<7.4.0",
+    "parcel-bundler": "^1.12.3",
     "sass": "^1.17.3"
   }
 }
