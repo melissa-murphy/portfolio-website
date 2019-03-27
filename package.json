@@ -6,10 +6,12 @@
   "author": "melissa-murphy <melissamurphy.ca@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -r dist .cache",
     "dev": "parcel index.html"
   },
   "dependencies": {
     "font-awesome.css": "^4.7.2",
+    "jq": "^1.7.2",
     "jquery": "^3.3.1"
   },
   "devDependencies": {
