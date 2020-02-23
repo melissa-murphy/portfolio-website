@@ -30,5 +30,6 @@ export const theme = {
 		display: "3rem",
 		large: "2rem",
 		normal: "1.25rem"
-	}
+	},
+	mobile: "576px"
 };
