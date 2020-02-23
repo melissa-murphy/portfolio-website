@@ -38,6 +38,7 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.secondary.light};
     text-decoration: none;
   }
+
 .navlink {
 	text-decoration: none;
 	font-size: ${({ theme }) => theme.fontSizes.normal};

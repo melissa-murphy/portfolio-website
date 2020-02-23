@@ -10,4 +10,14 @@ export const StyledHero = styled.div`
 	background-image: url(${goldengate});
 	background-size: cover;
 	background-position-x: 80%;
+	color: ${({ theme }) => theme.secondary.light};
+	h1 {
+		padding-top: 5rem;
+		font-family: "Rock Salt";
+	}
+	p {
+		text-align: left;
+		padding-left: 5rem;
+		font-size: ${({ theme }) => theme.fontSizes.normal};
+	}
 `;
