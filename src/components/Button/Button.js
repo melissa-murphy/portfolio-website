@@ -139,20 +139,18 @@ const StyledButton = styled.button.attrs(props => ({
 	border-right: ${props => props.borderRight};
 	border-bottom: ${props => props.borderBottom};
 	border-bottom-left-radius: ${props =>
-		props.borderRadiusBottomLeft
-			? `${props.borderRadiusBottomLeft}rem`
-			: ".5rem"};
+		props.borderRadiusBottomLeft ? `${props.borderRadiusBottomLeft}rem` : null};
 	border-top-left-radius: ${props =>
 		props.borderRadiusTopLeft ? `${props.borderRadiusTopLeft}rem` : ".5rem"};
 	border-top-right-radius: ${props =>
-		props.borderRadiusTopRight ? `${props.borderRadiusTopRight}rem` : ".5rem"};
+		props.borderRadiusTopRight ? `${props.borderRadiusTopRight}rem` : null};
 	border-bottom-right-radius: ${props =>
 		props.borderRadiusBottomRight
 			? `${props.borderRadiusBottomRight}rem`
 			: ".5rem"};
 	background-color: ${props =>
-		props.backgroundColor ? props.backgroundColor : props.theme.colors.purple};
-	color: ${props => (props.color ? props.color : props.theme.colors.white)};
+		props.backgroundColor ? props.backgroundColor : props.theme.primary.dark};
+	color: ${props => (props.color ? props.color : props.theme.color.white)};
 	outline: none;
 	cursor: pointer;
 	margin: ${props => (props.margin ? `${props.margin}rem` : "1rem")};
@@ -165,7 +163,7 @@ const StyledButton = styled.button.attrs(props => ({
 	align-items: center;
 	font-size: ${props =>
 		props.fontSize ? props.fontSize : props.theme.fontSizes.normal};
-	text-align: ${props => (props.textAlign ? props.textAlign : "left")};
+	text-align: ${props => (props.textAlign ? props.textAlign : "center")};
 	letter-spacing: ${props =>
 		props.letterSpacing ? `${props.letterSpacing}em` : "normal"};
 	position: ${props => (props.position ? props.position : "relative")};
@@ -174,7 +172,7 @@ const StyledButton = styled.button.attrs(props => ({
 
 	.icon-object-svg,
 	.icon-img-svg {
-		filter: ${props => (props.color ? props.color : props.theme.colors.white)};
+		filter: ${props => (props.color ? props.color : props.theme.color.white)};
 	}
 
 	&:hover,
@@ -182,13 +180,13 @@ const StyledButton = styled.button.attrs(props => ({
 		background-color: ${props =>
 			props.actionBackground
 				? props.actionBackground
-				: props.theme.colors.taupe};
+				: props.theme.secondary.dark};
 		color: ${props => props.actionColor};
 		opacity: ${props => (props.actionOpacity ? props.actionOpacity : 0.85)};
 		box-shadow: ${props =>
 			props.boxShadow
 				? props.boxShadow
-				: "0px 4px 10px rgba(21, 15, 172, 0.1)"};
+				: "0px 4px 10px rgba(21, 15, 172, 0.3)"};
 	}
 
 	&:active {
