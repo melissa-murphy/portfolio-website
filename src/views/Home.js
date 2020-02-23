@@ -1,11 +1,10 @@
 import React from "react";
-import Nav from "../components/Nav/Nav";
-import { Hero } from "../components";
+import { Hero, Burger } from "../components";
 
 const Home = () => {
 	return (
 		<>
-			<Nav />
+			<Burger />
 			<Hero />
 		</>
 	);
