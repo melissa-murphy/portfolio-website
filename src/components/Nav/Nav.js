@@ -1,14 +1,23 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Button from "../Button/Button";
 
 const Nav = () => {
 	return (
 		<>
 			<nav>
-				<NavLink to="/contact">Contact Me</NavLink>
-				<NavLink to="/resume">Resume</NavLink>
-				<NavLink to="/">Home</NavLink>
-                {/* ternary for home button here */}
+				<Button>
+					<NavLink className="navlink button" to="/contact">
+						Contact Me
+					</NavLink>
+				</Button>
+				<NavLink className="navlink" to="/resume">
+					Resume
+				</NavLink>
+				<NavLink className="navlink" to="/">
+					Home
+				</NavLink>
+				{/* ternary for home button here */}
 			</nav>
 		</>
 	);

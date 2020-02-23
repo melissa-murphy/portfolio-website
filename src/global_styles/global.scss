@@ -4,3 +4,10 @@ body {
 	background-color: $light;
 	height: 100%;
 }
+.navlink {
+	text-decoration: none;
+	&.button {
+		color: $white;
+	}
+	font-size: $font_regular;
+}
