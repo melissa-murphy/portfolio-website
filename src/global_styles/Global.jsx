@@ -38,20 +38,9 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.secondary.light};
     text-decoration: none;
   }
-  .main_nav {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
-
 .navlink {
 	text-decoration: none;
 	font-size: ${({ theme }) => theme.fontSizes.normal};
 	padding: 1rem;
 }
-.navlink_button {
-	text-decoration: none;
-	color: ${({ theme }) => theme.color.white};
-}
-
 `;
