@@ -21,10 +21,21 @@ export const StyledBurger = styled.button`
 	div {
 		width: 2rem;
 		height: 0.25rem;
-		background: ${({ theme }) => theme.primary.light};
+		background: ${({ theme, open }) =>
+			open ? theme.primary.dark : theme.primary.light};
 		border-radius: 10px;
 		transition: all 0.3s linear;
 		position: relative;
 		transform-origin: 1px;
+		:first-child {
+			transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+		}
+		:nth-child(2) {
+			opacity: ${({ open }) => (open ? "0" : "1")};
+			transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
+		}
+		:nth-child(3) {
+			transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+		}
 	}
 `;

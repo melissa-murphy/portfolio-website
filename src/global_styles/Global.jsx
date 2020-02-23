@@ -11,10 +11,10 @@ export const GlobalStyles = createGlobalStyle`
   body {
     display: flex;
     justify-content: center;
-    ${'' /* align-items: center; */}
+    align-items: center; 
     background: ${({ theme }) => theme.primary.dark};
     color: ${({ theme }) => theme.primary.light};
-    ${'' /* height: 100vh; */}
+    ${"" /* height: 100vh; */}
     text-rendering: optimizeLegibility;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
