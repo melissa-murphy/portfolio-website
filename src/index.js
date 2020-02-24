@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import "./index.scss";
-import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from './global_styles/Global';
+import {theme} from "./global_styles/theme";
+import App from "./App.jsx";
 
 ReactDOM.render(
-	<Router>
-		{" "}
-		<App />
-	</Router>,
+	<BrowserRouter>
+		<ThemeProvider theme={theme}>
+		<GlobalStyles />
+			<App />
+		</ThemeProvider>
+	</BrowserRouter>,
 	document.getElementById("root")
 );

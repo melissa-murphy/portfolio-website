@@ -1,6 +1,7 @@
 # Personal
 .history
 public/
+.vscode
 
 # Logs
 logs
