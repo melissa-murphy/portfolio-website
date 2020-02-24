@@ -1,5 +1,10 @@
 import React from "react";
-import { Hero, CurrentClients, Introduction } from "../components";
+import {
+	Hero,
+	CurrentClients,
+	Introduction,
+	CurrentProject
+} from "../components";
 
 const Home = () => {
 	return (
@@ -7,6 +12,7 @@ const Home = () => {
 			<Hero />
 			<Introduction />
 			<CurrentClients />
+			<CurrentProject />
 		</>
 	);
 };

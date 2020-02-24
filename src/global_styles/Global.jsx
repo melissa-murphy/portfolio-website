@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     justify-content: center;
     align-items: center; 
     background: ${({ theme }) => theme.primary.dark};
-    color: ${({ theme }) => theme.primary.light};
+    color: ${({ theme }) => theme.secondary.dark};
     ${"" /* height: 100vh; */}
     text-rendering: optimizeLegibility;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -22,6 +22,10 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
+    font-family: "Rock Salt";
+  }
+  h2, h3, h4, h5, h6 {
+    font-family: "Rock Salt";
   }
   img {
     border-radius: 5px;

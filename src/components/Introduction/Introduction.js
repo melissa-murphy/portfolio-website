@@ -4,10 +4,9 @@ import Headshot from "./headshot.js";
 
 const Introduction = () => (
 	<StyledIntroduction>
-		<h2>
-			Cupcake ipsum dolor sit amet lemon drops marzipan I love icing. Chupa
-			chups brownie topping caramels I love topping donut.
-		</h2>
+		<h4>
+			Cupcake ipsum dolor sit amet lemon drops marzipan I love icing. 
+		</h4>
 		<Headshot />
 		<p>
 			Cupcake ipsum dolor sit amet lemon drops marzipan I love icing. Chupa
