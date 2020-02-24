@@ -4,6 +4,11 @@ public/
 .vscode
 build/
 
+# Firebase
+firebase.json
+.firebaserc
+.firebase
+
 # Logs
 logs
 *.log
