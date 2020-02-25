@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./views/Home";
 import Contact from "./views/Contact";
 import Resume from "./views/Resume";
-import { Burger, MobileNav } from "./components";
+import { Burger, MobileNav, Footer } from "./components";
 import { useOnClickOutside } from "./hooks";
 
 const App = () => {
@@ -22,6 +22,7 @@ const App = () => {
 				<Route path="/contact" component={Contact} />
 				<Route path="/resume" component={Resume} />
 			</Switch>
+			<Footer />
 		</>
 	);
 };

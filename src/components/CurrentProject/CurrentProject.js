@@ -6,7 +6,7 @@ const CurrentProject = () => (
 		<h3>There is always a side project...</h3>
 		<h4>My own react-strap</h4>
 		<p>
-			<i class="fab fa-react" aria-label={"react"}></i>
+			<i className="fab fa-react" aria-label={"react"}></i>
 			<i aria-label={"plus"}> + </i>
 			<span role="img" aria-label={"styled components"}>
 				{" "}
@@ -28,7 +28,7 @@ const CurrentProject = () => (
 			target="blank"
 			rel="noreferrer"
 		>
-			<i class="fab fa-github fa-2x"></i>
+			<i className="fab fa-github fa-2x"></i>
 		</a>
 	</StyledCurrentProject>
 );

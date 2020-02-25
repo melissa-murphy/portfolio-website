@@ -11,14 +11,14 @@ const CurrentClients = () => (
 		<small>GLI Norcal Landscape Construction</small>
 		<Row>
 			<a href="https://www.glinorcal.com/" target="blank" rel="noreferrer">
-				<i class="fal fa-browser fa-2x"></i>
+				<i className="fal fa-browser fa-2x"></i>
 			</a>
 			<a
 				href="https://github.com/melissa-murphy/glinorcaldev"
 				target="blank"
 				rel="noreferrer"
 			>
-				<i class="fab fa-github fa-2x"></i>
+				<i className="fab fa-github fa-2x"></i>
 			</a>
 		</Row>
 		<Image src={sps} width={20} />
@@ -29,14 +29,14 @@ const CurrentClients = () => (
 				target="blank"
 				rel="noreferrer"
 			>
-				<i class="fal fa-browser fa-2x"></i>
+				<i className="fal fa-browser fa-2x"></i>
 			</a>
 			<a
 				href="https://github.com/melissa-murphy/stampSociety"
 				target="blank"
 				rel="noreferrer"
 			>
-				<i class="fab fa-github fa-2x"></i>
+				<i className="fab fa-github fa-2x"></i>
 			</a>
 		</Row>
 	</StyledCurrentClients>

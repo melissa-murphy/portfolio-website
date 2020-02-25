@@ -3,7 +3,8 @@ import {
 	Hero,
 	CurrentClients,
 	Introduction,
-	CurrentProject
+	CurrentProject,
+	Skills
 } from "../components";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
 			<Introduction />
 			<CurrentClients />
 			<CurrentProject />
+			<Skills />
 		</>
 	);
 };
