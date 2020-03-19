@@ -2,22 +2,24 @@ import styled from "styled-components";
 import goldengate from "../../imgs/goldengate.jpg";
 
 export const StyledHero = styled.div`
-	margin-top: 6rem;
 	height: 80vh;
-	width: 100vw;
-	margin-left: 0;
-	margin-right: 0;
-	background-image: url(${goldengate});
+	background: url(${goldengate});
 	background-size: cover;
-	background-position-x: 80%;
+	background-position-x: 49%;
 	color: ${({ theme }) => theme.secondary.light};
+`;
+
+export const StyledHeroInfo = styled.div`
+	position: relative;
+	margin-top: 5rem;
 	h1 {
-		padding-top: 5rem;
 		font-family: "Rock Salt";
 	}
 	p {
-		text-align: left;
-		padding-left: 5rem;
+		margin-right: 2rem;
+		line-height: 1rem;
+		text-align: right;
 		font-size: ${({ theme }) => theme.fontSizes.normal};
+		color: ${({ theme }) => theme.primary.dark};
 	}
 `;

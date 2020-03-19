@@ -6,6 +6,7 @@ export const StyledSkills = styled.div`
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+
 		.skill {
 			position: relative;
 			.gauge {
@@ -16,15 +17,27 @@ export const StyledSkills = styled.div`
 				right: 50;
 				top: 40%;
 			}
+			small {
+				position: absolute;
+				right: 50;
+				top: 30%;
+			}
 		}
 	}
-	div.bonus {
+	.bonus {
 		margin-top: 5rem;
-
+		display: flex;
+		align-items: center;
 		img {
-			margin-left: 1rem;
-			max-height: 4rem;
+			padding-left: 0.25rem;
+			height: 3rem;
 			width: auto;
 		}
+	}
+	.bonus-list {
+		display: flex;
+		flex-direction: column;
+		font-size: ${({ theme }) => theme.fontSizes.small};
+
 	}
 `;

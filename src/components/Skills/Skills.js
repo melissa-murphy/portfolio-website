@@ -10,7 +10,8 @@ const Skills = () => {
 		javascript: 70,
 		react: 70,
 		python: 50,
-		node: 50
+		node: 50,
+		django_rest: 60
 	};
 
 	return (
@@ -42,10 +43,36 @@ const Skills = () => {
 						<Gauge actual={skills.node} goal={100} />
 						<i className="fab fa-node-js fa-lg"></i>
 					</div>
+					<div className="skill">
+						<Gauge actual={skills.django_rest} goal={100} />
+						<small>
+							django
+							<br />
+							REST
+						</small>
+					</div>
 				</div>
 				<div className="bonus">
 					<h3>Bonus Skills</h3>
 					<img src={smiley} alt="" />
+				</div>
+				<div className="bonus-list">
+					<p>
+						<i className="fab fa-adobe fa-2x"></i> Gummi bears tiramisu icing ice
+						cream chupa chups
+					</p>
+					<p>
+						<i className="fad fa-file-excel fa-2x"></i> Gummi bears tiramisu icing ice
+						cream chupa chups
+					</p>
+					<p>
+						<i className="fad fa-analytics fa-2x"></i> Gummi bears tiramisu icing ice
+						cream chupa chups
+					</p>
+					<p>
+						<i className="fad fa-users fa-2x"></i> Gummi bears tiramisu icing ice cream
+						chupa chups
+					</p>
 				</div>
 			</StyledSkills>
 		</>

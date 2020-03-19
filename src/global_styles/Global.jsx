@@ -27,11 +27,6 @@ export const GlobalStyles = createGlobalStyle`
   h2, h3, h4, h5, h6 {
     font-family: "Rock Salt";
   }
-  img {
-    border-radius: 5px;
-    height: auto;
-    width: 10rem;
-  }
   div {
     text-align: center;
   }
