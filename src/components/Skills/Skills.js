@@ -57,21 +57,22 @@ const Skills = () => {
 					<img src={smiley} alt="" />
 				</div>
 				<div className="bonus-list">
+					<i className="fab fa-adobe fa-2x"></i>
 					<p>
-						<i className="fab fa-adobe fa-2x"></i> Gummi bears tiramisu icing ice
-						cream chupa chups
+						Experience with Adobe suite, with an emphasis on
+						Illustrator, InDesign, and Photoshop
 					</p>
 					<p>
-						<i className="fad fa-file-excel fa-2x"></i> Gummi bears tiramisu icing ice
-						cream chupa chups
+						<i className="fad fa-file-excel fa-2x"></i> Gummi bears tiramisu
+						icing ice cream chupa chups
 					</p>
 					<p>
-						<i className="fad fa-analytics fa-2x"></i> Gummi bears tiramisu icing ice
-						cream chupa chups
+						<i className="fad fa-analytics fa-2x"></i> Gummi bears tiramisu
+						icing ice cream chupa chups
 					</p>
 					<p>
-						<i className="fad fa-users fa-2x"></i> Gummi bears tiramisu icing ice cream
-						chupa chups
+						<i className="fad fa-users fa-2x"></i> Gummi bears tiramisu icing
+						ice cream chupa chups
 					</p>
 				</div>
 			</StyledSkills>

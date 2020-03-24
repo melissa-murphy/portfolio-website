@@ -25,7 +25,7 @@ export const StyledSkills = styled.div`
 		}
 	}
 	.bonus {
-		margin-top: 5rem;
+		margin-top: 2rem;
 		display: flex;
 		align-items: center;
 		img {
@@ -38,6 +38,7 @@ export const StyledSkills = styled.div`
 		display: flex;
 		flex-direction: column;
 		font-size: ${({ theme }) => theme.fontSizes.small};
-
+		max-width: 80vw;
+		margin: 0 auto;
 	}
 `;

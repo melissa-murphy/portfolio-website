@@ -15,8 +15,15 @@ const Footer = () => {
 						<NavLink to="/resume">Resume</NavLink>
 						<NavLink to="/contact">Contact Me</NavLink>
 						<div>
-							<i class="fab fa-linkedin fa-lg"></i>
-							<i class="fab fa-twitter-square fa-lg"></i>
+							<a href="https://www.linkedin.com/in/melissamurphy/">
+								<i class="fab fa-linkedin fa-lg"></i>
+							</a>
+							<a href="https://github.com/melissa-murphy">
+								<i class="fab fa-github-square fa-lg"></i>
+							</a>
+							<a href="https://twitter.com/thinkModes">
+								<i class="fab fa-twitter-square fa-lg"></i>
+							</a>
 						</div>
 					</div>
 				</div>

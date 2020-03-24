@@ -4,7 +4,7 @@ import { StyledCurrentProject } from "./CurrentProjectStyles.js";
 const CurrentProject = () => (
 	<StyledCurrentProject>
 		<h3>There is always a side project...</h3>
-		<h4>My own react-strap</h4>
+		<h5>My own react-strap</h5>
 		<p>
 			<i className="fab fa-react" aria-label={"react"}></i>
 			<i aria-label={"plus"}> + </i>

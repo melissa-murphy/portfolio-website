@@ -12,9 +12,10 @@ const Home = () => {
 		<>
 			<Hero />
 			<Introduction />
+			<Skills />
 			<CurrentClients />
 			<CurrentProject />
-			<Skills />
+			
 		</>
 	);
 };

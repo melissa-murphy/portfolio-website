@@ -22,8 +22,9 @@ export const StyledFooter = styled.div`
 				flex-direction: row;
 				margin-top: 1rem;
 				margin-left: 0;
-				i:nth-child(n + 2) {
-					margin: 0 0.5rem;
+				a {
+					color: ${({ theme }) => theme.primary.dark};
+					margin-right: 0.5rem;
 				}
 			}
 		}

@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const StyledCurrentProject = styled.div`
+	width: 90vw;
+	margin: 0 auto;
 	h3 {
-		margin: 0 0.5rem;
+		margin: 0 auto;
 	}
-	h4 {
+	h5 {
 		margin-top: 0;
 		padding-top: 0;
 	}

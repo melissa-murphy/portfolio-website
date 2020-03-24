@@ -5,21 +5,20 @@ import Headshot from "./headshot.js";
 const Introduction = () => (
 	<StyledIntroduction>
 		<h4>
-			Cupcake ipsum dolor sit amet lemon drops marzipan I love icing. 
+			I am a fullstack web developer from the SF Bay Area, and I love to build
+			beautiful things.
 		</h4>
 		<Headshot />
 		<p>
-			Cupcake ipsum dolor sit amet lemon drops marzipan I love icing. Chupa
-			chups brownie topping caramels I love topping donut. Candy I love lemon
-			drops I love biscuit cupcake gummies pie danish. I love sugar plum biscuit
-			sugar plum I love marshmallow. Chocolate cake sesame snaps tiramisu
-			liquorice carrot cake icing. I love candy tootsie roll jelly beans jujubes
-			liquorice lollipop. Gummi bears tiramisu icing ice cream chupa chups
-			lollipop oat cake I love jujubes. Macaroon ice cream croissant. Halvah
-			jelly candy. Sweet roll halvah carrot cake dessert sesame snaps jujubes.
+			From small business websites to larger collaborative app projects, I seek
+			ways to be insightful and innovative. I am comfortable in leadership and
+			support positions and lean into celebrating teamwork over individual
+			successes. Are you looking to hire a dynamic and friendly web developer
+			with a marketing background? Then I would be a great addition to your team!
+			&nbsp; <i class="fal fa-grin-beam"></i>
 		</p>
 
-		<hr />
+<hr />
 	</StyledIntroduction>
 );
 
