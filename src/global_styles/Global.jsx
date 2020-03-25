@@ -38,6 +38,13 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
+hr {
+  border-color: ${({ theme }) => theme.primary.light};
+  max-width: 90vw;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+}
 .navlink {
 	text-decoration: none;
 	font-size: ${({ theme }) => theme.fontSizes.normal};

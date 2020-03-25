@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const StyledSkills = styled.div`
-	margin-top: 5rem;
 	div {
 		display: flex;
 		flex-wrap: wrap;
@@ -25,7 +24,6 @@ export const StyledSkills = styled.div`
 		}
 	}
 	.bonus {
-		margin-top: 2rem;
 		display: flex;
 		align-items: center;
 		img {

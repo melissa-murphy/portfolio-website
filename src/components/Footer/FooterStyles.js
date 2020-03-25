@@ -33,13 +33,14 @@ export const StyledFooter = styled.div`
 	div.legal {
 		position: absolute;
 		bottom: 0;
+		left: 0;
+		right: 0;
 		background-color: ${({ theme }) => theme.color.gray};
-		color: ${({ theme }) => theme.primary.light};
-		width: 100vw;
 		margin: 0;
-		height: 2rem;
-		padding-right: 0.2rem;
-		text-align: right;
-		font-size: ${({ theme }) => theme.fontSizes.small};
+		p {
+			color: ${({ theme }) => theme.primary.light};
+			text-align: right;
+			font-size: ${({ theme }) => theme.fontSizes.small};
+		}
 	}
 `;

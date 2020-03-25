@@ -52,6 +52,7 @@ const Skills = () => {
 						</small>
 					</div>
 				</div>
+				<hr />
 				<div className="bonus">
 					<h3>Bonus Skills</h3>
 					<img src={smiley} alt="" />
@@ -75,6 +76,7 @@ const Skills = () => {
 						ice cream chupa chups
 					</p>
 				</div>
+				<hr />
 			</StyledSkills>
 		</>
 	);

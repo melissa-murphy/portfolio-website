@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Image = ({ src, altText, ...props }) => {
-	const { height, width, borderRadius } = props;
+	const { height, width, borderRadius, boxShadow } = props;
 	return (
 		<StyledImage
 			src={src}
@@ -11,6 +11,7 @@ const Image = ({ src, altText, ...props }) => {
 			height={height}
 			width={width}
 			borderRadius={borderRadius}
+			boxShadow={boxShadow}
 		/>
 	);
 };
@@ -18,12 +19,14 @@ const Image = ({ src, altText, ...props }) => {
 const StyledImage = styled.img.attrs(props => ({
 	height: props.height,
 	width: props.width,
-	borderRadius: props.borderRadius
+	borderRadius: props.borderRadius,
+	boxShadow: props.boxShadow
 }))`
 	height: ${props => (props.height ? `${props.height}rem` : "100%")};
 	width: ${props => (props.width ? `${props.width}rem` : `auto`)};
 	border-radius: ${props =>
 		props.borderRadius ? `${props.borderRadius}rem` : "10px"};
+	box-shadow: ${props => (props.boxShadow ? props.boxShadow : "2px 2px 8px black" )}
 `;
 
 export default Image;

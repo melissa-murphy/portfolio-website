@@ -11,15 +11,18 @@ export const StyledHero = styled.div`
 
 export const StyledHeroInfo = styled.div`
 	position: relative;
-	margin-top: 5rem;
+	margin-top: 7rem;
 	h1 {
 		font-family: "Rock Salt";
+		padding-top: 0.5rem;
+		text-shadow: 2px 2px 5px ${({ theme }) => theme.primary.dark};
 	}
 	p {
 		margin-right: 2rem;
-		line-height: 1rem;
+		line-height: 0.85rem;
 		text-align: right;
 		font-size: ${({ theme }) => theme.fontSizes.normal};
-		color: ${({ theme }) => theme.primary.dark};
+		color: ${({ theme }) => theme.secondary.light};
+		text-shadow: 2px 2px 5px ${({ theme }) => theme.primary.dark};
 	}
 `;
