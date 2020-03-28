@@ -60,21 +60,23 @@ const Skills = () => {
 				<div className="bonus-list">
 					<i className="fab fa-adobe fa-2x"></i>
 					<p>
-						Experience with Adobe suite, with an emphasis on
-						Illustrator, InDesign, and Photoshop
+						Experience with Adobe suite, with an emphasis on Illustrator,
+						InDesign, and Photoshop
 					</p>
+
+					<i className="fad fa-file-excel fa-2x"></i>
 					<p>
-						<i className="fad fa-file-excel fa-2x"></i> Gummi bears tiramisu
-						icing ice cream chupa chups
+						Skill beyond the basics with Google Sheets, including experience
+						with the Sheets API
 					</p>
+
+					<i className="fad fa-analytics fa-2x"></i>
 					<p>
-						<i className="fad fa-analytics fa-2x"></i> Gummi bears tiramisu
-						icing ice cream chupa chups
-					</p>
-					<p>
-						<i className="fad fa-users fa-2x"></i> Gummi bears tiramisu icing
-						ice cream chupa chups
-					</p>
+						Moderate skills in Google Analytics, but willing to learn more (I'm a
+						beast with documentation<span>🤓</span>)
+					</p>	
+					<i className="fad fa-users fa-2x"></i> 
+					<p>I'm a natural introvert and observer, so I am particularly good at leading teams</p>
 				</div>
 				<hr />
 			</StyledSkills>

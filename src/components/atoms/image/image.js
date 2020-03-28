@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Image = ({ src, altText, ...props }) => {
+
 	const { height, width, borderRadius, boxShadow } = props;
 	return (
 		<StyledImage
@@ -26,7 +27,10 @@ const StyledImage = styled.img.attrs(props => ({
 	width: ${props => (props.width ? `${props.width}rem` : `auto`)};
 	border-radius: ${props =>
 		props.borderRadius ? `${props.borderRadius}rem` : "10px"};
-	box-shadow: ${props => (props.boxShadow ? props.boxShadow : "2px 2px 8px black" )}
+	box-shadow: ${props =>
+		props.boxShadow
+			? props.boxShadow
+			: "3px 3px 8px midnightblue"};
 `;
 
 export default Image;
