@@ -18,10 +18,13 @@ const CurrentProject = () => (
 				🎉{" "}
 			</span>
 		</p>
-		<p>
-			sesame snaps tiramisu liquorice carrot cake icing. I love candy tootsie
-			roll jelly beans jujubes liquorice lollipop. Gummi bears tiramisu icing
-			ice cream chupa chups lollipop oat cake I love jujubes.
+		<p className="text-block">
+			I spend a lot of time on projects for smaller businesses and individuals,
+			and these apps and sites are naturally smaller. I realized that the more
+			robust UI libraries that exist are amazing, but often too much for a
+			little project -- and so [need name] was born! These are base components
+			with Styled Components baked in, so I can just pass props for styling.
+			<small>Project in progress...</small>
 		</p>
 		<a
 			href="https://github.com/melissa-murphy/atom_components"

@@ -50,4 +50,7 @@ hr {
 	font-size: ${({ theme }) => theme.fontSizes.normal};
 	padding: 1rem;
 }
+.text-block {
+  text-align: justify;
+}
 `;

@@ -6,5 +6,9 @@ export const StyledCurrentProject = styled.div`
 
 	p {
 		margin: 0.75rem;
+		small {
+			padding-top: 1rem;
+			text-align: center;
+		}
 	}
 `;

@@ -5,5 +5,6 @@ export const StyledIntroduction = styled.div`
 	margin: 0 auto;
 	p {
 		font-size: ${({ theme }) => theme.fontSizes.normal};
+		/* text-align: justify; */
 	}
 `;
