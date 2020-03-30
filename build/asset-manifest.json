@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.d97f52a9.chunk.js",
-    "main.js.map": "/static/js/main.d97f52a9.chunk.js.map",
+    "main.js": "/static/js/main.5a4c9962.chunk.js",
+    "main.js.map": "/static/js/main.5a4c9962.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.742b6627.js",
     "runtime-main.js.map": "/static/js/runtime-main.742b6627.js.map",
     "static/js/2.0ba06936.chunk.js": "/static/js/2.0ba06936.chunk.js",
     "static/js/2.0ba06936.chunk.js.map": "/static/js/2.0ba06936.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.21bba071a250460159798786fa071519.js": "/precache-manifest.21bba071a250460159798786fa071519.js",
+    "precache-manifest.270eb154effe9d51e7be34beaf94f16d.js": "/precache-manifest.270eb154effe9d51e7be34beaf94f16d.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.0ba06936.chunk.js.LICENSE.txt": "/static/js/2.0ba06936.chunk.js.LICENSE.txt",
     "static/media/gli_home.png": "/static/media/gli_home.7aa8c591.png",
@@ -19,6 +19,6 @@
   "entrypoints": [
     "static/js/runtime-main.742b6627.js",
     "static/js/2.0ba06936.chunk.js",
-    "static/js/main.d97f52a9.chunk.js"
+    "static/js/main.5a4c9962.chunk.js"
   ]
 }

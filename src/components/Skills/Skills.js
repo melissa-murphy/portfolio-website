@@ -72,7 +72,7 @@ const Skills = () => {
 
 					<i className="fad fa-analytics fa-2x"></i>
 					<p>
-						Moderate skills in Google Analytics, but willing to learn more (I'm a
+						Experience with Google Analytics, but willing to learn more (I'm a
 						beast with documentation<span>🤓</span>)
 					</p>	
 					<i className="fad fa-users fa-2x"></i> 

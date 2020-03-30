@@ -41,6 +41,7 @@ export const StyledFooter = styled.div`
 			color: ${({ theme }) => theme.primary.light};
 			text-align: right;
 			font-size: ${({ theme }) => theme.fontSizes.small};
+			padding-right: 1rem;
 		}
 	}
 `;

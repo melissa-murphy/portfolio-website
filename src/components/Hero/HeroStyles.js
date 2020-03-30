@@ -2,7 +2,7 @@ import styled from "styled-components";
 import goldengate from "../../imgs/goldengate.jpg";
 
 export const StyledHero = styled.div`
-	height: 80vh;
+	height: 90vh;
 	background: url(${goldengate});
 	background-size: cover;
 	background-position-x: 49%;
