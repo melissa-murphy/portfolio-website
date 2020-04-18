@@ -1,11 +1,13 @@
 import React from "react";
-import Nav from "../components/Nav/Nav";
+// import { Image } from "../components/atoms";
+import resume from "../imgs/Resume-Melissa-Murphy.pdf";
 
 const Resume = () => {
 	return (
 		<>
-			<Nav />
-			<h1>Resume</h1>
+			<div className="resume">
+				<img src={resume} height="800" width="300"></img>
+			</div>
 		</>
 	);
 };

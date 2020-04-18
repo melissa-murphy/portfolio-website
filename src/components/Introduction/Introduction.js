@@ -14,11 +14,11 @@ const Introduction = () => (
 			ways to be insightful and innovative. I am comfortable in leadership and
 			support positions and lean into celebrating teamwork over individual
 			successes. Are you looking to hire a dynamic and friendly web developer
-			with a marketing background? Then I would be a great addition to your team!
-			&nbsp; <i class="fal fa-grin-beam"></i>
+			with a marketing background? Then I would be a great addition to your
+			team! &nbsp; <i className="fal fa-grin-beam"></i>
 		</p>
 
-<hr />
+		<hr />
 	</StyledIntroduction>
 );
 

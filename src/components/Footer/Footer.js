@@ -8,7 +8,7 @@ const Footer = () => {
 	return (
 		<>
 			<StyledFooter>
-				<div>
+				<div className="footer">
 					<h2>Melissa Murphy</h2>
 					<div>
 						{location.pathname === "/" ? null : <NavLink to="/">Home</NavLink>}
@@ -16,13 +16,13 @@ const Footer = () => {
 						<NavLink to="/contact">Contact Me</NavLink>
 						<div>
 							<a href="https://www.linkedin.com/in/melissamurphy/">
-								<i class="fab fa-linkedin fa-lg"></i>
+								<i className="fab fa-linkedin fa-lg"></i>
 							</a>
 							<a href="https://github.com/melissa-murphy">
-								<i class="fab fa-github-square fa-lg"></i>
+								<i className="fab fa-github-square fa-lg"></i>
 							</a>
 							<a href="https://twitter.com/thinkModes">
-								<i class="fab fa-twitter-square fa-lg"></i>
+								<i className="fab fa-twitter-square fa-lg"></i>
 							</a>
 						</div>
 					</div>

@@ -38,5 +38,11 @@ export const theme = {
 		normal: "1.25rem",
 		small: "0.75rem"
 	},
-	mobile: "576px"
+	breakpoints: {
+		// using min-width
+		small: "576px",
+		medium: "768px",
+		large: "992px",
+		xl: "1200"
+	}
 };

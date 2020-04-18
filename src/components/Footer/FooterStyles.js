@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
 export const StyledFooter = styled.div`
-	position: relative;
-	height: 60vh;
 	margin-top: 5rem;
+	position: absolute;
+	right: 0;
+	left: 0;
+	padding-bottom: 5rem;
 	padding-top: 2rem;
 	background-color: ${({ theme }) => theme.primary.light};
 	color: ${({ theme }) => theme.primary.dark};
 	div {
 		text-align: left;
 		margin-left: 2rem;
+
 		div {
 			display: flex;
 			flex-direction: column;
