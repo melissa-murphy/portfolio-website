@@ -19,7 +19,9 @@ export const StyledFooter = styled.div`
 			line-height: 2rem;
 			font-variant: small-caps;
 			font-size: ${({ theme }) => theme.fontSizes.normal};
-
+			a {
+				color: ${({ theme }) => theme.color.dark};
+			}
 			div {
 				display: flex;
 				flex-direction: row;

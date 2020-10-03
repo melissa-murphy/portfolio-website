@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
   h1 {
     font-size: 2rem;
     text-align: center;
-    ${'' /* text-transform: uppercase; */}
+    ${"" /* text-transform: uppercase; */}
     font-family: "Rock Salt";
   }
   h2, h3, h4, h5, h6 {
@@ -37,7 +37,7 @@ export const GlobalStyles = createGlobalStyle`
     display: block;
   }
   a {
-    color: ${({ theme }) => theme.color.dark};
+    color: ${({ theme }) => theme.color.primary};
     text-decoration: none;
   }
 
