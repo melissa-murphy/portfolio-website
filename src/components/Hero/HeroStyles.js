@@ -18,7 +18,7 @@ export const StyledHeroInfo = styled.div`
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	margin-top: -2.5rem;
+	margin-top: -3rem;
 	p {
 		font-size: ${({ theme }) => theme.fontSizes.normal};
 		color: ${({ theme }) => theme.color.secondary};

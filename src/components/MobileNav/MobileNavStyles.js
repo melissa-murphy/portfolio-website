@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const MobileMenuHeader = styled.div`
 	display: flex;
 	flex-direction: row;
+	width: 100vw;
 	h2 {
-		color: ${({theme}) => theme.color.primary};
+		color: ${({ theme }) => theme.color.primary};
 		margin-right: 2rem;
 		margin-left: auto;
+		
 	}
 `;
 
@@ -21,8 +23,9 @@ export const StyledMenu = styled.nav`
 	position: absolute;
 	top: 0;
 	left: 0;
-	transition: transform 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
+	z-index: ${({ open }) => (open ? 9999 : "auto")};
 	@media (max-width: ${({ theme }) => theme.mobile}) {
 		width: 100%;
 	}

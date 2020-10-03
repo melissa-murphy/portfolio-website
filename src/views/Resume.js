@@ -1,15 +1,18 @@
 import React from "react";
-// import { Image } from "../components/atoms";
-// import resume from "../imgs/Resume-Melissa-Murphy.pdf";
+import styled from "styled-components";
 
 const Resume = () => {
 	return (
 		<>
-			<div className="resume">
-				{/* <img src={resume} height="800" width="300"></img> */}
-			</div>
+			<StyledResume className="resume">
+
+			</StyledResume>
 		</>
 	);
 };
 
 export default Resume;
+
+const StyledResume = styled.div`
+max-width: 100vw;
+`;

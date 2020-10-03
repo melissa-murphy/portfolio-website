@@ -4,12 +4,13 @@ import Home from "./views/Home";
 import Contact from "./views/Contact";
 import Resume from "./views/Resume";
 import { Footer, MobileNav } from "./components";
-import { useOnClickOutside } from "./hooks";
+import { useOnClickOutside, useOnClick } from "./hooks";
 
 const App = () => {
 	const [open, setOpen] = useState(false);
 	const node = useRef();
 	useOnClickOutside(node, () => setOpen(false));
+	useOnClick(node, () => setOpen(false));
 	return (
 		<>
 			<div ref={node}>
