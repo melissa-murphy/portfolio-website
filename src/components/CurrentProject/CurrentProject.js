@@ -4,7 +4,7 @@ import { StyledCurrentProject } from "./CurrentProjectStyles.js";
 const CurrentProject = () => (
 	<StyledCurrentProject>
 		<h3>There is always a side project...</h3>
-		<h5>My own react-strap</h5>
+		<h5>A Custom UI Kit</h5>
 		<p>
 			<i className="fab fa-react" aria-label={"react"}></i>
 			<i aria-label={"plus"}> + </i>
@@ -19,10 +19,10 @@ const CurrentProject = () => (
 			</span>
 		</p>
 		<p className="text-block">
-			I spend a lot of time on projects for smaller businesses and individuals,
+			I spend a lot of time on projects for local businesses and individuals,
 			and these apps and sites are naturally smaller. I realized that the more
 			robust UI libraries that exist are amazing, but often too much for a
-			little project -- and so [need name] was born! These are base components
+			little project -- and so my custom UI kit was born! These are base components
 			with Styled Components baked in, so I can just pass props for styling.
 			<small>Project in progress...</small>
 		</p>

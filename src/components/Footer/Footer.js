@@ -9,7 +9,7 @@ const Footer = () => {
 		<>
 			<StyledFooter>
 				<div className="footer">
-					<h2>Melissa Murphy</h2>
+					<h2>Melissa Mondot</h2>
 					<div>
 						{location.pathname === "/" ? null : <NavLink to="/">Home</NavLink>}
 						<NavLink to="/resume">Resume</NavLink>
@@ -28,7 +28,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="legal">
-					<p>Melissa Murphy, All Rights Reserved</p>
+					<p>Melissa Mondot, All Rights Reserved</p>
 				</div>
 			</StyledFooter>
 		</>

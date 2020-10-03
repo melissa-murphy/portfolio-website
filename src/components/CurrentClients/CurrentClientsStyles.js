@@ -5,7 +5,7 @@ export const StyledCurrentClients = styled.div`
 		justify-content: center;
 		i {
 			margin: 0 1rem;
-			color: ${({ theme }) => theme.primary.light};
+			color: ${({ theme }) => theme.color.primary};
 		}
 	}
 `;

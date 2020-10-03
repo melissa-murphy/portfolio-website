@@ -16,9 +16,9 @@ const Nav = () => {
 				<NavLink className="navlink" to="/resume">
 					Resume
 				</NavLink>
-					<NavLink className="navlink" to="/contact">
-						Contact Me
-					</NavLink>
+				<NavLink className="navlink" to="/contact">
+					Contact Me
+				</NavLink>
 			</nav>
 		</>
 	);

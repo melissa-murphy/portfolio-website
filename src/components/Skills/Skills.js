@@ -11,7 +11,7 @@ const Skills = () => {
 		react: 70,
 		python: 50,
 		node: 50,
-		django_rest: 60
+		rest_api: 60,
 	};
 
 	return (
@@ -35,6 +35,15 @@ const Skills = () => {
 						<Gauge actual={skills.javascript} goal={100} />
 						<i className="fab fa-js-square fa-lg"></i>
 					</div>
+
+					<div className="skill">
+						<Gauge actual={skills.rest_api} goal={100} />
+						<small>
+							REST
+							<br />
+							apis
+						</small>
+					</div>
 					<div className="skill">
 						<Gauge actual={skills.python} goal={100} />
 						<i className="fab fa-python fa-lg"></i>
@@ -42,14 +51,6 @@ const Skills = () => {
 					<div className="skill">
 						<Gauge actual={skills.node} goal={100} />
 						<i className="fab fa-node-js fa-lg"></i>
-					</div>
-					<div className="skill">
-						<Gauge actual={skills.django_rest} goal={100} />
-						<small>
-							django
-							<br />
-							REST
-						</small>
 					</div>
 				</div>
 				<hr />
@@ -61,9 +62,10 @@ const Skills = () => {
 					<i className="fab fa-adobe fa-2x"></i>
 					<p>
 						Experience with Adobe suite, with an emphasis on Illustrator,
-						InDesign, and Photoshop
+						XD, InDesign, and Photoshop
 					</p>
-
+					<i class="fab fa-figma fa-2x"></i>
+					<p>Experienced in UX design with Figma, Whimsical and Adobe XD</p>
 					<i className="fad fa-file-excel fa-2x"></i>
 					<p>
 						Skill beyond the basics with Google Sheets, including experience
@@ -73,10 +75,17 @@ const Skills = () => {
 					<i className="fad fa-analytics fa-2x"></i>
 					<p>
 						Experience with Google Analytics, but willing to learn more (I'm a
-						beast with documentation<span>🤓</span>)
-					</p>	
-					<i className="fad fa-users fa-2x"></i> 
-					<p>I'm a natural introvert and observer, so I am particularly good at leading teams</p>
+						beast with documentation
+						<span role="img" aria-label="nerd emoji">
+							🤓
+						</span>
+						)
+					</p>
+					<i className="fad fa-users fa-2x"></i>
+					<p>
+						I'm a natural introvert and observer, so I am particularly good at
+						leading teams
+					</p>
 				</div>
 				<hr />
 			</StyledSkills>

@@ -98,7 +98,7 @@ const StyledRow = styled.div.attrs(props => ({
 		props.borderRadiusBottomRight ? props.borderRadiusBottomRight : 0};
 	background-color: ${props =>
 		props.backgroundColor ? props.backgroundColor : "transparent"};
-	color: ${props => (props.color ? props.color : props.theme.primary.light)};
+	color: ${props => (props.color ? props.color : props.theme.color.primary)};
 	outline: none;
 	cursor: auto;
 	margin: ${props => (props.margin ? `${props.margin}` : "0 auto")};

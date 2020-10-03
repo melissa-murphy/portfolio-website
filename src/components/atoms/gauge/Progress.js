@@ -40,7 +40,7 @@ const ProgressPathStyle = styled.circle`
 const ProgressLayerStyle = styled.circle`
   width: 60rem;
   height: 60rem;
-  stroke: ${({theme}) => theme.primary.light};
+  stroke: ${({theme}) => theme.color.primary};
   animation: dash 1.5s ease-in-out;
   animation-delay: 1s;
   @keyframes dash {
