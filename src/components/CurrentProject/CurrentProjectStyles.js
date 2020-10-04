@@ -11,4 +11,8 @@ export const StyledCurrentProject = styled.div`
 			text-align: center;
 		}
 	}
+	i {
+		border-radius: 100rem;
+		box-shadow: 13px 13px 15px #00000070, -13px -13px 15px #3a3a3a70;
+	}
 `;

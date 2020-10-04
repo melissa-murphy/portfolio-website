@@ -1,18 +1,12 @@
 import React from "react";
-import styled from "styled-components";
+import DevResume from "../components/Resume/Resume";
 
 const Resume = () => {
 	return (
 		<>
-			<StyledResume className="resume">
-
-			</StyledResume>
+			<DevResume />
 		</>
 	);
 };
 
 export default Resume;
-
-const StyledResume = styled.div`
-max-width: 100vw;
-`;

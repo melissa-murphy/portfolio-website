@@ -8,7 +8,7 @@ const MobileNav = ({ open, setOpen }) => {
 		<>
 			<MobileMenuHeader>
 				<Burger open={open} setOpen={setOpen} />
-                <h2>Melissa Mondot</h2>
+                <h1>Melissa Mondot</h1>
 			</MobileMenuHeader>
 			<MobileNavFlyout open={open} setOpen={setOpen} />
 		</>

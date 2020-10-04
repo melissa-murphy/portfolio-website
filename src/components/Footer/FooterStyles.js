@@ -29,7 +29,10 @@ export const StyledFooter = styled.div`
 				margin-left: 0;
 				a {
 					color: ${({ theme }) => theme.color.dark};
-					margin-right: 0.5rem;
+					margin-right: 1rem;
+					i {
+						box-shadow: 6px 6px 18px #00000016, -6px -6px 18px #ffffff
+					}
 				}
 			}
 		}

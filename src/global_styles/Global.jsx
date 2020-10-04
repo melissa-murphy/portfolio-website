@@ -21,14 +21,12 @@ export const GlobalStyles = createGlobalStyle`
     text-rendering: optimizeLegibility;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-    ${"" /* text-transform: uppercase; */}
+
+  h1, h3 {
     font-family: "Rock Salt";
   }
-  h2, h3, h4, h5, h6 {
-    font-family: "Rock Salt";
+  h2, h4, h5, h6 {
+    font-family: "Raleway"
   }
   div {
     text-align: center;
@@ -44,9 +42,8 @@ export const GlobalStyles = createGlobalStyle`
 hr {
   border-color: ${({ theme }) => theme.color.primary};
   max-width: 90vw;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-
+  margin: 3rem auto;
+  
 }
 .navlink {
 	text-decoration: none;

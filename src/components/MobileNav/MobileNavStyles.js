@@ -4,7 +4,8 @@ export const MobileMenuHeader = styled.div`
 	display: flex;
 	flex-direction: row;
 	width: 100vw;
-	h2 {
+	h1 {
+		font-size: 1.6rem;
 		color: ${({ theme }) => theme.color.primary};
 		margin-right: 2rem;
 		margin-left: auto;

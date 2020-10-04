@@ -22,7 +22,7 @@ const Row = ({ ...props }) => {
 		padding,
 		justifyContent,
 		flex,
-		flexFlow
+		flexDirection,
 	} = props;
 
 	return (
@@ -47,14 +47,14 @@ const Row = ({ ...props }) => {
 			padding={padding}
 			justifyContent={justifyContent}
 			flex={flex}
-			flexFlow={flexFlow}
+			flexDirection={flexDirection}
 		>
 			{props.children}
 		</StyledRow>
 	);
 };
 
-const StyledRow = styled.div.attrs(props => ({
+const StyledRow = styled.div.attrs((props) => ({
 	actionColor: props.actionColor,
 	actionBackground: props.actionBackground,
 	actionOpacity: props.actionOpacity,
@@ -78,40 +78,40 @@ const StyledRow = styled.div.attrs(props => ({
 	width: props.width,
 	href: props.href,
 	display: props.display,
-	flexFlow: props.flexFlow,
-	textAlign: props.textAlign
+	flexDirection: props.column ? "column" : "row",
+	textAlign: props.textAlign,
 }))`
-	height: ${props => (props.height ? `${props.height}%` : "100%")};
-	width: ${props => (props.width ? `${props.width}%` : `100%`)};
-	border: ${props => (props.border ? props.border : "none")};
-	border-left: ${props => props.borderLeft};
-	border-top: ${props => props.borderTop};
-	border-right: ${props => props.borderRight};
-	border-bottom: ${props => props.borderBottom};
-	border-bottom-left-radius: ${props =>
+	height: ${(props) => (props.height ? `${props.height}%` : "100%")};
+	width: ${(props) => (props.width ? `${props.width}%` : `100%`)};
+	border: ${(props) => (props.border ? props.border : "none")};
+	border-left: ${(props) => props.borderLeft};
+	border-top: ${(props) => props.borderTop};
+	border-right: ${(props) => props.borderRight};
+	border-bottom: ${(props) => props.borderBottom};
+	border-bottom-left-radius: ${(props) =>
 		props.borderRadiusBottomLeft ? props.borderRadiusBottomLeft : 0};
-	border-top-left-radius: ${props =>
+	border-top-left-radius: ${(props) =>
 		props.borderRadiusTopLeft ? props.borderRadiusTopLeft : 0};
-	border-top-right-radius: ${props =>
+	border-top-right-radius: ${(props) =>
 		props.borderRadiusTopRight ? props.borderRadiusTopRight : 0};
-	border-bottom-right-radius: ${props =>
+	border-bottom-right-radius: ${(props) =>
 		props.borderRadiusBottomRight ? props.borderRadiusBottomRight : 0};
-	background-color: ${props =>
+	background-color: ${(props) =>
 		props.backgroundColor ? props.backgroundColor : "transparent"};
-	color: ${props => (props.color ? props.color : props.theme.color.primary)};
+	color: ${(props) => (props.color ? props.color : props.theme.color.primary)};
 	outline: none;
 	cursor: auto;
-	margin: ${props => (props.margin ? `${props.margin}` : "0 auto")};
-	padding: ${props => (props.padding ? `${props.margin}` : "1rem")};
+	margin: ${(props) => (props.margin ? `${props.margin}` : "0 auto")};
+	padding: ${(props) => (props.padding ? `${props.margin}` : "1rem")};
 	display: flex;
-	flex-flow: row nowrap;
+	/* flex-direction: ${(props) => (props.column ? "column" : "row")}; */
 	flex-wrap: nowrap;
-	justify-content: ${props =>
+	justify-content: ${(props) =>
 		props.justifyContent ? props.justifyContent : "space-around"};
 	align-items: center;
-	font-size: ${props =>
+	font-size: ${(props) =>
 		props.fontSize ? props.fontSize : props.theme.fontSizes.small};
-	text-align: ${props => (props.textAlign ? props.textAlign : "left")};
+	text-align: ${(props) => (props.textAlign ? props.textAlign : "left")};
 `;
 
 export default Row;
