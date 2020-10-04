@@ -4,7 +4,7 @@ import Headshot from "./headshot.js";
 
 const Introduction = () => (
 	<StyledIntroduction>
-		<h2>I am a full-stack web developer from California,</h2>
+		<h2>I am a Full Stack web developer from California,</h2>
 		<h3>
 			and I love to build
 			<br />

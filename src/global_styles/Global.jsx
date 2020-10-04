@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import "../index.scss"
 
 export const GlobalStyles = createGlobalStyle`
   html, body {

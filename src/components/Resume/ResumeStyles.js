@@ -14,21 +14,73 @@ export const ResumeIntro = styled.div`
 
 export const ResumeExpertise = styled.div`
 	text-align: left;
-	h5 {
+	h3 {
 		margin-left: 2rem;
+		font-variant: small-caps;
+		font-size: 1.1rem;
+		letter-spacing: 3px;
+		color: ${({ theme }) => theme.color.secondary};
 	}
 `;
 
 export const ResumeExperience = styled.div`
 	text-align: left;
-    margin-right: 2rem;
-	h5, h6 {
+	margin-right: 2rem;
+	h3 {
+		margin-left: 2rem;
+		margin-bottom: -0.5rem;
+		font-variant: small-caps;
+		font-size: 1.1rem;
+		letter-spacing: 3px;
+		color: ${({ theme }) => theme.color.secondary};
+	}
+	h4 {
+		margin-left: 2rem;
+		color: ${({ theme }) => theme.color.primary};
+		margin-bottom: -1rem;
+	}
+	p {
 		margin-left: 2rem;
 	}
-    p {
-        margin-left: 2rem;
-    }
-    ul {
-        margin-left: 1rem;
-    }
+	ul {
+		margin-left: 1rem;
+	}
+`;
+
+export const ResumeEducation = styled.div`
+	text-align: left;
+	margin-right: 2rem;
+	h3 {
+		margin-left: 2rem;
+		margin-bottom: -0.5rem;
+		font-variant: small-caps;
+		font-size: 1.1rem;
+		letter-spacing: 3px;
+		color: ${({ theme }) => theme.color.secondary};
+	}
+	h4 {
+		margin-left: 2rem;
+		color: ${({ theme }) => theme.color.primary};
+		margin-bottom: -1rem;
+	}
+	p {
+		margin-left: 2rem;
+	}
+`;
+
+export const ResumeTechStack = styled.div`
+	text-align: left;
+	margin-right: 2rem;
+	h3 {
+		margin-left: 2rem;
+		margin-bottom: -0.5rem;
+		font-variant: small-caps;
+		font-size: 1.1rem;
+		letter-spacing: 3px;
+		color: ${({ theme }) => theme.color.secondary};
+	}
+
+	p {
+		margin-left: 2rem;
+	}
 `;
