@@ -3,7 +3,7 @@ import { StyledCurrentProject } from "./CurrentProjectStyles.js";
 
 const CurrentProject = () => (
 	<StyledCurrentProject>
-		<h3>There is always a side project...</h3>
+		<h3>There is always<br/>a side project...</h3>
 		<h5>A Custom UI Kit</h5>
 		<p>
 			<i className="fab fa-react" aria-label={"react"}></i>
