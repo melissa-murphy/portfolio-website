@@ -64,7 +64,7 @@ const Skills = () => {
 						Experience with Adobe suite, with an emphasis on Illustrator,
 						XD, InDesign, and Photoshop
 					</p>
-					<i className="fab fa-figma fa-2x"></i>
+					<i class="fab fa-figma fa-2x"></i>
 					<p>Experienced in UX design with Figma, Whimsical and Adobe XD</p>
 					<i className="fad fa-file-excel fa-2x"></i>
 					<p>
