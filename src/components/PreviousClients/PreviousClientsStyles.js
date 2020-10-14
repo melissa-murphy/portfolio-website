@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledCurrentClients = styled.div`
+export const StyledPreviousClients = styled.div`
 	div.styled-row {
 		justify-content: center;
 		i {

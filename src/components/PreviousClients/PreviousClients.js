@@ -1,11 +1,11 @@
 import React from "react";
-import { StyledCurrentClients } from "./CurrentClientsStyles.js";
+import { StyledPreviousClients } from "./PreviousClientsStyles.js";
 import { Image, Row } from "../atoms";
 import gli from "../../imgs/gli_home.png";
 import sps from "../../imgs/sps_home.png";
 
-const CurrentClients = () => (
-	<StyledCurrentClients>
+const PreviousClients = () => (
+	<StyledPreviousClients>
 		<h3>Some previous clients:</h3>
 		<Image src={gli} width={20} />
 		<small>GLI Norcal Landscape Construction</small>
@@ -31,7 +31,7 @@ const CurrentClients = () => (
 				<i className="fab fa-github fa-2x"></i>
 			</a>
 		</Row>
-	</StyledCurrentClients>
+	</StyledPreviousClients>
 );
 
-export default CurrentClients;
+export default PreviousClients;

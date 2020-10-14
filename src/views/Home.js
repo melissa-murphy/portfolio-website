@@ -1,7 +1,7 @@
 import React from "react";
 import {
 	Hero,
-	CurrentClients,
+	PreviousClients,
 	Introduction,
 	CurrentProject,
 	Skills
@@ -13,7 +13,7 @@ const Home = () => {
 			<Hero />
 			<Introduction />
 			<Skills />
-			<CurrentClients />
+			<PreviousClients />
 			<CurrentProject />
 			
 		</>
