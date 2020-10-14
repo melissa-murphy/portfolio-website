@@ -2,6 +2,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { StyledForm } from "./ContactFormStyle";
 
+
+// TODO: clear form on submit
 const ContactForm = () => {
 	const { register, handleSubmit, errors } = useForm();
 	const onSubmit = (data) => console.log(data);
