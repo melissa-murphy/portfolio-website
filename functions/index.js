@@ -4,13 +4,13 @@ const cors = require("cors")({
 	origin: true,
 });
 
-const user = functions.config().gmail.email;
+const devEmail = functions.config().gmail.email;
 const creds = functions.config().gmail.gmailPassword;
 
 const transporter = nodemailer.createTransport({
 	service: "gmail",
 	auth: {
-		user: user,
+		user: devEmail,
 		pass: creds,
 	},
 });
@@ -30,7 +30,7 @@ exports.submit = functions.https.onRequest((req, res) => {
 				const mailTemplate = {
 					from: req.body.email,
 					replyTo: req.body.email,
-					to: user,
+					to: devEmail,
 					subject: `Portfolio contact from: ${req.body.name}`,
 					text: req.body.message,
 					html: `<p>${req.body.message}</p>`,
