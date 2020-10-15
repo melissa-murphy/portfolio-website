@@ -4,12 +4,13 @@ export const MobileMenuHeader = styled.div`
 	display: flex;
 	flex-direction: row;
 	width: 100vw;
-	h1 {
-		font-size: 1.6rem;
-		color: ${({ theme }) => theme.color.primary};
-		margin-right: 2rem;
+	a {
+		margin-right: 1rem;
 		margin-left: auto;
-		
+		h1 {
+			font-size: 1.5rem;
+			color: ${({ theme }) => theme.color.primary};
+		}
 	}
 `;
 

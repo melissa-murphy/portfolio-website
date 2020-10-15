@@ -1,9 +1,47 @@
-const functions = require('firebase-functions');
+const functions = require("firebase-functions");
+const nodemailer = require("nodemailer");
+const cors = require("cors")({
+	origin: true,
+});
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//   functions.logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+const user = functions.config().gmail.email;
+const creds = functions.config().gmail.gmailPassword;
+
+const transporter = nodemailer.createTransport({
+	service: "gmail",
+	auth: {
+		user: user,
+		pass: creds,
+	},
+});
+
+exports.submit = functions.https.onRequest((req, res) => {
+	res.set("Access-Control-Allow-Origin", "*");
+	res.set("Access-Control-Allow-Methods", "GET, PUT, POST, OPTIONS");
+	res.set("Access-Control-Allow-Headers", "*");
+
+	req.method === "OPTIONS"
+		? res.end()
+		: cors(req, res, () => {
+				if (req.method !== "POST") {
+					return;
+				}
+
+				const mailTemplate = {
+					from: req.body.email,
+					replyTo: req.body.email,
+					to: user,
+					subject: `Portfolio contact from: ${req.body.name}`,
+					text: req.body.message,
+					html: `<p>${req.body.message}</p>`,
+				};
+
+				return transporter.sendMail(mailTemplate).then(() => {
+					console.log("Message sent to Melissa Mondot");
+					res.status(200).send({
+						isEmailSent: true,
+					});
+					return;
+				});
+		  });
+});
