@@ -19,7 +19,7 @@ const Introduction = () => (
 			with a marketing background? Then I would be a great addition to your
 			team!
 		</p>
-		<i class="fal fa-smile-beam fa-2x"></i>
+		<i className="fal fa-smile-beam fa-2x"></i>
 		<hr />
 	</StyledIntroduction>
 );
