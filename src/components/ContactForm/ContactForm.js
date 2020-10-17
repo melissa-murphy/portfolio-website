@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import * as FirestoreService from "../../firebase/firestore";
 import { useForm } from "react-hook-form";
-import { StyledForm } from "./ContactFormStyle";
+import { StyledForm, ThankYouModal, HiddenModal } from "./ContactFormStyle";
+import { useOnClickOutside } from "../../hooks";
 
+// TODO: notification upon new doc to collection
 const ContactForm = () => {
 	const { register } = useForm();
 	const [formData, setFormData] = useState({});
+	const [modalOpen, setModalOpen] = useState(false);
+	const node = useRef();
+	useOnClickOutside(node, () => setModalOpen(false));
 
 	const updateInput = (e) => {
 		setFormData({
@@ -21,7 +26,16 @@ const ContactForm = () => {
 			email: "",
 			message: "",
 		});
+		handleModalOpen();
 	};
+
+	const handleModalOpen = () => {
+		setModalOpen(true);
+		console.log("modal invoked");
+	};
+	// const handleModalClose = () => {
+	// 	setModalOpen(false);
+	// };
 
 	const createMessage = (e) => {
 		// e.preventDefault();
@@ -30,12 +44,25 @@ const ContactForm = () => {
 		const contactMessage = document.contactForm.contactMessage.value;
 
 		FirestoreService.createMessage(contactName, contactEmail, contactMessage)
-			.then(console.log("right after firestore service"))
+			.then(console.log("Message sent."))
 			.catch((err) => console.log(err));
 	};
+	// const messageComplete = (e) => {};
 
 	return (
 		<>
+			<div ref={node}>
+				{modalOpen === true ? (
+					<ThankYouModal modalOpen={modalOpen} setModalOpen={setModalOpen}>
+						<p>
+							Thank you for your message!
+							<br />I will get back to you ASAP! (:
+						</p>
+					</ThankYouModal>
+				) : (
+					<HiddenModal></HiddenModal>
+				)}
+			</div>
 			<StyledForm name="contactForm" onSubmit={handleSubmit}>
 				<label>Name</label>
 				<input

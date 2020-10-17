@@ -12,10 +12,10 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
-// send messages without explicit auth
-export const authenticateAnonymously = () => {
-	return firebase.auth().signInAnonymously();
-};
+// // send messages without explicit auth
+// export const authenticateAnonymously = () => {
+// 	return firebase.auth().signInAnonymously();
+// };
 
 export const createMessage = (contactName, contactEmail, contactMessage) => {
 	return db.collection("messages").add({

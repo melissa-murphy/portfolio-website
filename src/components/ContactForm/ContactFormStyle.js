@@ -25,7 +25,7 @@ export const StyledForm = styled.form`
 			margin-top: 2rem;
 		}
 		:last-child {
-            margin-top: 1.5rem;
+			margin-top: 1.5rem;
 			padding: 0.5rem 0;
 			background-color: ${({ theme }) => theme.color.tertiary};
 			color: white;
@@ -42,3 +42,6 @@ export const StyledForm = styled.form`
 		border: ${({ theme }) => theme.color.dark};
 	}
 `;
+export const ThankYouModal = styled.div``;
+
+export const HiddenModal = styled.div``;
