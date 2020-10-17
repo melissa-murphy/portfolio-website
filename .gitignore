@@ -4,6 +4,7 @@ public/
 .vscode
 build/
 .env
+mm-dev-portfolio-202d9daed296.json
 
 # Firebase
 firebase.json

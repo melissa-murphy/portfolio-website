@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Axios, db } from "../../firebase/firebaseConfig";
 import { useForm } from "react-hook-form";
 import { StyledForm } from "./ContactFormStyle";
 
@@ -16,32 +15,11 @@ const ContactForm = () => {
 	};
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		sendEmail();
 		setFormData({
 			name: "",
 			email: "",
 			message: "",
 		});
-	};
-
-	const sendEmail = () => {
-		Axios.post(
-			// "http://localhost:5001/mm-dev-portfolio/us-central1/submit", 
-			"https://us-central1-mm-dev-portfolio.cloudfunctions.net/submit",
-			formData
-		)
-			.then((res) => {
-				console.log(res);
-				db.collection("emails").add({
-					name: formData.name,
-					email: formData.email,
-					message: formData.message,
-					time: new Date(),
-				});
-			})
-			.catch((error) => {
-				console.log(error);
-			});
 	};
 
 	return (
