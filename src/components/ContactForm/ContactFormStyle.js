@@ -42,6 +42,8 @@ export const StyledForm = styled.form`
 		border: ${({ theme }) => theme.color.dark};
 	}
 `;
-export const ThankYouModal = styled.div``;
+export const ThankYouModal = styled.div`
+	transition: all 1s ease-out;
+`;
 
 export const HiddenModal = styled.div``;
