@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import * as FirestoreService from "../../firebase/firestore";
 import { useForm } from "react-hook-form";
 import { StyledForm } from "./ContactFormStyle";
 
-// TODO: clear form on submit
 const ContactForm = () => {
 	const { register } = useForm();
 	const [formData, setFormData] = useState({});
@@ -15,6 +15,7 @@ const ContactForm = () => {
 	};
 	const handleSubmit = (event) => {
 		event.preventDefault();
+		createMessage();
 		setFormData({
 			name: "",
 			email: "",
@@ -22,32 +23,43 @@ const ContactForm = () => {
 		});
 	};
 
+	const createMessage = (e) => {
+		// e.preventDefault();
+		const contactName = document.contactForm.contactName.value;
+		const contactEmail = document.contactForm.contactEmail.value;
+		const contactMessage = document.contactForm.contactMessage.value;
+
+		FirestoreService.createMessage(contactName, contactEmail, contactMessage)
+			.then(console.log("right after firestore service"))
+			.catch((err) => console.log(err));
+	};
+
 	return (
 		<>
-			<StyledForm onSubmit={handleSubmit}>
+			<StyledForm name="contactForm" onSubmit={handleSubmit}>
 				<label>Name</label>
 				<input
 					type="text"
-					name="name"
+					name="contactName"
 					ref={register}
 					onChange={updateInput}
-					value={formData.name || ""}
+					value={formData.contactName || ""}
 				/>
 				<label>Email</label>
 				<input
 					type="email"
-					name="email"
+					name="contactEmail"
 					ref={register({ required: true })}
 					onChange={updateInput}
-					value={formData.email || ""}
+					value={formData.contactEmail || ""}
 				/>
 				<label>Message</label>
 				<textarea
-					name="message"
+					name="contactMessage"
 					placeholder="I look forward to hearing from you ^_^"
 					ref={register}
 					onChange={updateInput}
-					value={formData.message || ""}
+					value={formData.contactMessage || ""}
 				/>
 
 				<input type="submit" />
